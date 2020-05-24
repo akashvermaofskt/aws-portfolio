@@ -24,7 +24,7 @@ const ContactMe = () => {
   return (
     <div className="container" id="cm">
         <div className="row">
-            <div className="col text-center">
+            <div className="col text-center" id="cf">
                 <form className="bg-dark" action="https://formspree.io/xwkrlkdw" id="mail-me" method="POST" onSubmit={submitForm}>
                     <h3>
                         Contact Me:

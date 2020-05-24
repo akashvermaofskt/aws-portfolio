@@ -59,6 +59,9 @@ form label{
   width:100%;
 }
 
+#cf{
+  min-width: 350px;
+}
 #ct{
   margin-top:100px;
   margin-left:50px;

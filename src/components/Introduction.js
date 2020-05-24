@@ -5,7 +5,7 @@ const Introduction = () => {
     <div className="jumbotron jumbotron-fluid" id="about" >
         
         <p style={{width:"80%",margin:"auto"}} className="text-center"  >
-                The name is Akash Verma and I'm a software developer, with decent practical experience and knowledge in building webpages and programs; and very passionate about computer science.
+                My name is Akash Verma and I'm a software developer, with decent practical experience and knowledge in building webpages and programs; and I'm very passionate about computer science.
         </p>
         <div className="container">
             <hr width="80%"></hr>
