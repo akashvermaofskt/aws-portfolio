@@ -4,6 +4,8 @@ import Carousel from 'react-bootstrap/Carousel';
 const MyCarousel = () => {
   return (
     <div className="container-fluid text-center" id="showcase">
+      <h3>My competitive programming profiles</h3>
+      <hr width="80%"></hr>
       <Carousel>
         <Carousel.Item>
           <a href="https://www.codechef.com/users/noxious_av">
@@ -17,7 +19,7 @@ const MyCarousel = () => {
           </a>
           <Carousel.Caption>
             <h3>Codechef</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>5 star, 2000+ Rating, ~3000 Global Rank, ~1500 Country Rank</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -33,7 +35,7 @@ const MyCarousel = () => {
           </a>
           <Carousel.Caption>
             <h3>Hackerrank</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Problem solving 6 stars, 1800+ rating in Algorithms</p>
           </Carousel.Caption>
 
         </Carousel.Item>
@@ -49,7 +51,7 @@ const MyCarousel = () => {
           </a>
           <Carousel.Caption>
             <h3>Codeforces</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>1400+ rating</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
