@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-scroll";
 const Navbar = () => {
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -9,14 +9,47 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="myNavbar">
                 <ul className="navbar-nav navbar-right ml-auto">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#about">About <span className="sr-only">(current)</span> </a>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link"
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                        >
+                            About
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#showcase">Portfolio</a>
+                        <Link
+                            className="nav-link"
+                            activeClass="active"
+                            to="showcase"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                        >
+                            Portfolio
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#cm">Contact</a>
+                        <Link
+                            className="nav-link"
+                            activeClass="active"
+                            to="cm"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </div>
