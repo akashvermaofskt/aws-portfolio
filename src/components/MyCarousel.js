@@ -40,11 +40,11 @@ const MyCarousel = () => {
 
         </Carousel.Item>
         <Carousel.Item>
-          <a href="http://codeforces.com/profile/noxious_av">
+          <a href="https://codeforces.com/profile/noxious_av">
             <div className="mx-auto bg-dark" id="car">
               <img
                 className="d-block img-fluid mx-auto width150"
-                src="http://st.codeforces.com/s/70853/images/codeforces-logo-with-telegram.png"
+                src="https://st.codeforces.com/s/70853/images/codeforces-logo-with-telegram.png"
                 alt="Third slide"
               />
             </div>
