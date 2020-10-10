@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-scroll";
-const Navbar = () => {
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    Collapse,
+    Nav,
+    NavItem
+} from 'reactstrap';
+
+const MyNavbar = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="https://www.linkedin.com/in/akashvermaofskt/"><i className="fas fa-crown" id="ico" ></i>{'   '}Personal Portfolio</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="myNavbar">
-                <ul className="navbar-nav navbar-right ml-auto">
-                    <li className="nav-item">
+        <Navbar color="dark" dark sticky="top" expand="md">
+            <NavbarBrand href="https://www.linkedin.com/in/akashvermaofskt/">
+                AV
+            </NavbarBrand>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+                <Nav className="mr-auto" navbar>
+                    <NavItem>
                         <Link
                             className="nav-link"
                             activeClass="active"
@@ -21,9 +33,9 @@ const Navbar = () => {
                             style={{ cursor: "pointer" }}
                         >
                             About
-                        </Link>
-                    </li>
-                    <li className="nav-item">
+                            </Link>
+                    </NavItem>
+                    <NavItem>
                         <Link
                             className="nav-link"
                             activeClass="active"
@@ -36,8 +48,8 @@ const Navbar = () => {
                         >
                             Portfolio
                         </Link>
-                    </li>
-                    <li className="nav-item">
+                    </NavItem>
+                    <NavItem>
                         <Link
                             className="nav-link"
                             activeClass="active"
@@ -50,11 +62,11 @@ const Navbar = () => {
                         >
                             Contact
                         </Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>  
-  );
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
+    );
 }
 
-export default Navbar;
+export default MyNavbar;
