@@ -1,7 +1,7 @@
 import React from 'react';
 
 //components
-import Navbar from './components/Navbar';
+import MyNavbar from './components/MyNavbar';
 import Introduction from './components/Introduction';
 import MyCarousel from './components/MyCarousel';
 import ContactMe from './components/ContactMe';
@@ -10,10 +10,10 @@ import ContactMe from './components/ContactMe';
 const App = () => {
   return (
     <div className="App">
-      <Navbar/>
-      <Introduction/>
-      <MyCarousel/>
-      <ContactMe/>
+      <MyNavbar />
+      <Introduction />
+      <MyCarousel />
+      <ContactMe />
     </div>
   );
 }
